@@ -1,0 +1,26 @@
+@import "_nool.scss";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+body {
+  font-family: Comfortaa, sans-serif;
+}
+.limitContent {
+  max-width: 1141px;
+  margin: 0 auto;
+}
+.buttonHomeWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+  .buttonHome {
+    border: 1px solid #000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    min-width: 50px;
+    min-height: 50px;
+    background-color: #d3ebf0;
+  }
+}
+
+@import "_welcome.scss";
