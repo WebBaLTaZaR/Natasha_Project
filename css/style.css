@@ -7,31 +7,58 @@
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   line-height: 1;
   font-size: 14px;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -48,7 +75,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -64,7 +92,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: 400;
 }
@@ -140,4 +173,52 @@ body {
   text-align: center;
   margin-top: 170px;
   margin-bottom: auto;
+}
+
+.devicesWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.devicesWrap .devicesName {
+  font-size: 36px;
+  margin-top: 85px;
+  margin: 85px auto 0;
+}
+
+.devicesWrap .meteostationWrap {
+  margin: 14px 27px 41px 27px;
+  border-radius: 35px;
+  min-height: 549px;
+  background-color: #cbedf5;
+}
+
+.devicesWrap .meteostationWrap .meteostationButton {
+  border-radius: 15px;
+  margin: 27px auto auto 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.devicesWrap .meteostationWrap .meteostationButton .imgDrop {
+  padding: 4px 0px 6px 4px;
+}
+
+.devicesWrap .meteostationWrap .meteostationButton .meteostationName {
+  font-size: 20px;
+  padding: 5px 5px 5px 15px;
+}
+
+.devicesWrap .meteostationWrap .meteostationButton .arrowRight {
+  padding: 14px 14px 14px 0px;
 }
