@@ -13,21 +13,20 @@
     background-color: #cbedf5;
     .meteostationButton {
       border-radius: 15px;
-	  margin: 27px auto auto 20px;
+      margin: 27px auto auto 20px;
       display: inline-flex;
       background-color: #fff;
-	  align-items: center;
-	  .imgDrop{
-		padding:4px 0px 6px 4px ;
-	  }
+      align-items: center;
+      .imgDrop {
+        padding: 4px 0px 6px 4px;
+      }
       .meteostationName {
         font-size: 20px;
-		padding: 5px 5px 5px 15px;
-		
+        padding: 5px 5px 5px 15px;
       }
-	  .arrowRight{
-		padding: 14px 14px 14px 0px;
-	  }
+      .arrowRight {
+        padding: 14px 14px 14px 0px;
+      }
     }
   }
 }

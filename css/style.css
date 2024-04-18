@@ -222,3 +222,73 @@ body {
 .devicesWrap .meteostationWrap .meteostationButton .arrowRight {
   padding: 14px 14px 14px 0px;
 }
+
+.mstationWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180.02deg, #b8dbe2 1.01%, #c4e5ec 47.49%, #efefef 99.99%);
+}
+
+.mstationWrap .mstationMainText {
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.mstationWrap .mstationIndicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.mstationWrap .mstationIndicators .indicator {
+  font-size: 14px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 15px;
+  min-width: 338px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.mstationWrap .mstationIndicators .indicator .indicatorWrapLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 13px;
+}
+
+.mstationWrap .mstationIndicators .indicator .indicatorWrapRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
