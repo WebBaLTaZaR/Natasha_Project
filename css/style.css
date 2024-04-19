@@ -107,11 +107,6 @@ body {
   font-family: Comfortaa, sans-serif;
 }
 
-.limitContent {
-  max-width: 1141px;
-  margin: 0 auto;
-}
-
 .buttonHomeWrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,7 +149,6 @@ body {
   height: 100%;
   background-image: url(/img/welcome_home.png);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center center;
 }
 
@@ -187,7 +181,6 @@ body {
 
 .devicesWrap .devicesName {
   font-size: 36px;
-  margin-top: 85px;
   margin: 85px auto 0;
 }
 

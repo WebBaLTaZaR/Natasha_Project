@@ -1,28 +1,24 @@
-@import "_nool.scss";
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@import "_nool.scss"; // подключение файла для зануления дефолтных значений 
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"); // подключение специального шрифта
 body {
-  font-family: Comfortaa, sans-serif;
-}
-.limitContent {
-  max-width: 1141px;
-  margin: 0 auto;
+  font-family: Comfortaa, sans-serif; // приминение конкретного шрифта
 }
 .buttonHomeWrap {
   display: flex;
   justify-content: center;
   margin-bottom: 26px;
   .buttonHome {
-    border: 1px solid #000;
-    display: inline-flex;
+    border: 1px solid #000; // линия вокру контейнера
+    display: inline-flex; // flexbox для строчных элементов
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    min-width: 50px;
-    min-height: 50px;
-    background-color: #d3ebf0;
+    border-radius: 50%; // закругление краёв объекта
+    min-width: 50px; // минимальная ширина
+    min-height: 50px; // минимальная высота
+    background-color: #d3ebf0; // цвет фона
   }
 }
 
-@import "_welcome.scss";
+@import "_welcome.scss"; // импорт остальных файлов
 @import "_devices.scss";
 @import "_mstation.scss";

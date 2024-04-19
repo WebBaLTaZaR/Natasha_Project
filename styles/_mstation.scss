@@ -1,7 +1,7 @@
 .mstationWrap {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-evenly; // распределяет объекты не прижимая к краям
   width: 100%;
   height: 100%;
   background: linear-gradient(
@@ -9,7 +9,7 @@
     #b8dbe2 1.01%,
     #c4e5ec 47.49%,
     #efefef 99.99%
-  );
+  ); // градиент заднего фона
   .mstationMainText {
     margin: 0 auto;
 
@@ -26,8 +26,8 @@
       min-width: 338px;
       display: flex;
       align-items: center;
-      margin: 0 auto;
-      padding: 20px;
+      margin: 0 auto; // установка объекта по центру
+      padding: 20px; // внутренний отступ
       background-color: #fff;
       .indicatorWrapLeft {
         display: flex;

@@ -1,21 +1,20 @@
 .bodyWelcome {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/welcome_home.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  display: flex; // используется технология FlexBox
+  flex-direction: column; // установка содержимого контейнера вертикально
+  justify-content: space-between; // установка содержимого контейнера на равноудаленное расстояние друг от друга
+  width: 100%; // разрешить контейнеру занимать 100% ширины
+  height: 100%; // разрешить контейнеру занимать 100% высоты
+  background-image: url(/img/welcome_home.png); // установка фонового изображения
+  background-repeat: no-repeat; // фоновое изображение не должно повторяться
+  background-position: center center; // позиционирование изображение по центру
   .welcomeMessage {
     display: flex;
-    font-size: 24px;
-    align-items: center;
-    justify-content: center;
-    gap: 34px;
-    text-align: center;
-    margin-top: 170px;
-    margin-bottom: auto;
+    font-size: 24px; // размер шрифта
+    align-items: center; // расположить объекты в контейнере по центру по одной оси
+    justify-content: center; // расположить объекты в контейнере по центру по другой оси
+    gap: 34px; // расстояние между объектами в контейнере
+    text-align: center; // центровка текста
+    margin-top: 170px; // расстояние сверху
+    margin-bottom: auto; // расстояние снизу
   }
 }

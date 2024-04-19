@@ -3,13 +3,12 @@
   flex-direction: column;
   .devicesName {
     font-size: 36px;
-    margin-top: 85px;
-    margin: 85px auto 0;
+    margin: 85px auto 0; // внешние отступы верх, справа, снизу, слева.
   }
   .meteostationWrap {
-    margin: 14px 27px 41px 27px;
+    margin: 14px 27px 41px 27px; // внешние отступы верх, справа, снизу, слева.
     border-radius: 35px;
-    min-height: 549px;
+    min-height: 549px; // минимальная высота
     background-color: #cbedf5;
     .meteostationButton {
       border-radius: 15px;
@@ -18,7 +17,7 @@
       background-color: #fff;
       align-items: center;
       .imgDrop {
-        padding: 4px 0px 6px 4px;
+        padding: 4px 0px 6px 4px; // внутренние отступы верх, справа, снизу, слева.
       }
       .meteostationName {
         font-size: 20px;
