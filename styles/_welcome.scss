@@ -2,9 +2,10 @@
   display: flex; // используется технология FlexBox
   flex-direction: column; // установка содержимого контейнера вертикально
   justify-content: space-between; // установка содержимого контейнера на равноудаленное расстояние друг от друга
-  width: 100%; // разрешить контейнеру занимать 100% ширины
-  height: 100%; // разрешить контейнеру занимать 100% высоты
-  background-image: url(/img/welcome_home.png); // установка фонового изображения
+  width: 375px; // разрешить контейнеру занимать 100% ширины
+  height: 812px; // разрешить контейнеру занимать 100% высоты
+  margin: 0 auto;
+  background-image: url("../img/welcome_home.png"); // установка фонового изображения
   background-repeat: no-repeat; // фоновое изображение не должно повторяться
   background-position: center center; // позиционирование изображение по центру
   .welcomeMessage {
