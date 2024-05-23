@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <!--страндарт поддерживаемых символов-->
@@ -13,7 +12,6 @@
     <title>Welcome</title>
     <!--название документа-->
 </head>
-
 <body>
     <!--Тело документа, в котором пишется весь код-->
     <div class="bodyWelcome">

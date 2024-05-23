@@ -7,22 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Mstation</title>
-    <script>
-      function fetchData() {
-    fetch('http://192.168.1.100/Natasha_project/api.php')
-        .then(response => response.json()) // предполагаем, что сервер отдаёт JSON
-        .then(data => {
-            document.querySelector('.temp').textContent = data.temp;
-            document.querySelector('.humidity').textContent = data.humidity;
-            document.querySelector('.pressure').textContent = data.pressure;
-            document.querySelector('.co2').textContent = data.co2;
-        })
-        .catch(error => console.error('Error fetching data: ', error));
-}
-
-// Вызывать функцию fetchData каждые 5 секунд
-setInterval(fetchData, 5000);
-    </script>
   </head>
 
   <body>
@@ -83,5 +67,26 @@ setInterval(fetchData, 5000);
         </div>
       </div>
     </div>
+    <script>
+      function fetchData() {
+    fetch('api.php')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Data received:", data); // Логирование полученных данных
+            document.querySelector('.temp').textContent = data.temp;
+            document.querySelector('.humidity').textContent = data.humidity;
+            document.querySelector('.pressure').textContent = data.pressure;
+            document.querySelector('.co2').textContent = data.co2;
+        })
+        .catch(error => console.error('Error fetching data:', error));
+}
+setInterval(fetchData, 5000);
+
+    </script>
   </body>
 </html>
